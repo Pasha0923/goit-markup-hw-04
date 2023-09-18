@@ -75,6 +75,7 @@ a {
 
 .nav-link {
   display: inline-block;
+  position: relative;
   padding: 24px 0;
   color: #2e2f42;
   font-weight: 500;
@@ -87,11 +88,11 @@ a {
 .nav-link:focus {
   color: #404bbf;
 }
-.nav-link:first-child {
-  position: relative;
+
+.active {
   color: #404bbf;
 }
-.nav-link:first-child::after {
+.active::after {
   content: "";
   position: absolute;
   left: 0;
